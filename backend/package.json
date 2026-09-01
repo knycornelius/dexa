@@ -30,7 +30,13 @@
     "pg": "^8.23.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
-    "typeorm": "^1.1.1"
+    "typeorm": "^1.1.1",
+    "class-validator": "latest",
+    "class-transformer": "latest",
+    "@nestjs/jwt": "latest",
+    "@nestjs/passport": "latest",
+    "passport-jwt": "latest",
+    "bcrypt": "latest"
   },
   "devDependencies": {
     "@nestjs/cli": "^12.0.0",
@@ -47,6 +53,8 @@
     "supertest": "^7.0.0",
     "typescript": "^6.0.2",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^4.1.2"
+    "vitest": "^4.1.2",
+    "@types/passport-jwt": "latest",
+    "@types/bcrypt": "latest"
   }
 }

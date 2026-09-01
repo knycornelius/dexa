@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: dexa
+      POSTGRES_PASSWORD: dexa
+      POSTGRES_DB: dexa_attendance
+    ports:
+      - "5432:5432"
+    volumes:
+      - dexa_pgdata:/var/lib/postgresql/data
+
+volumes:
+  dexa_pgdata:
