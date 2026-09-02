@@ -56,6 +56,7 @@
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^4.1.2",
     "@types/passport-jwt": "latest",
-    "@types/bcrypt": "latest"
+    "@types/bcrypt": "latest",
+    "@types/multer": "latest"
   }
 }

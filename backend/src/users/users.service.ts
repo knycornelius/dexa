@@ -49,7 +49,6 @@ export class UsersService {
     return user;
   }
 
-  // Used by the Auth module in Phase 3 — the only query path that selects passwordHash.
   findByEmailWithPassword(email: string): Promise<User | null> {
     return this.usersRepository
       .createQueryBuilder('user')
