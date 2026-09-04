@@ -6,7 +6,8 @@
     "dev:backend": "bun run --cwd backend dev",
     "dev:frontend": "bun run --cwd frontend dev",
     "build": "bun run --cwd backend build && bun run --cwd frontend build",
-    "start": "concurrently -n backend,frontend -c green,cyan \"bun run --cwd backend start\" \"bun run --cwd frontend start\""
+    "start": "concurrently -n backend,frontend -c green,cyan \"bun run --cwd backend start\" \"bun run --cwd frontend start\"",
+    "seed": "bun run --cwd backend seed"
   },
   "private": true,
   "devDependencies": {
