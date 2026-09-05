@@ -95,7 +95,7 @@ export class AttendanceService {
     });
     if (!record)
       throw new NotFoundException(
-        'No check-in found for today — check in first',
+        'No check-in found for today, you need to check in first',
       );
     if (record.checkOutAt)
       throw new ConflictException('Already checked out today');

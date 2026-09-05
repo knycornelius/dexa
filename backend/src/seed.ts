@@ -5,8 +5,18 @@ import { UserRole } from './users/entities/user.entity.js';
 import { UsersService } from './users/users.service.js';
 
 const SEED_USERS = [
-  { email: 'admin@test.com', password: 'test1234', name: 'Test Admin', role: UserRole.ADMIN },
-  { email: 'employee@test.com', password: 'test1234', name: 'Test Employee', role: UserRole.EMPLOYEE },
+  {
+    email: 'admin@test.com',
+    password: 'test1234',
+    name: 'Test Admin',
+    role: UserRole.ADMIN,
+  },
+  {
+    email: 'employee@test.com',
+    password: 'test1234',
+    name: 'Test Employee',
+    role: UserRole.EMPLOYEE,
+  },
 ];
 
 async function run() {
@@ -19,7 +29,7 @@ async function run() {
       console.log(`Created ${seedUser.email}`);
     } catch (error) {
       if (error instanceof ConflictException) {
-        console.log(`Skipped ${seedUser.email} — already exists`);
+        console.log(`Skipped ${seedUser.email}, user already exists`);
       } else {
         throw error;
       }

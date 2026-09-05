@@ -22,7 +22,7 @@ export class StorageService implements OnModuleInit {
     const { data, error } = await this.client.storage.getBucket(this.bucket);
     if (error || !data) {
       throw new Error(
-        `Supabase Storage bucket "${this.bucket}" is not reachable — check SUPABASE_URL, ` +
+        `Supabase Storage bucket "${this.bucket}" is not reachable, check SUPABASE_URL, ` +
           `SUPABASE_SERVICE_ROLE_KEY, and that the bucket exists. (${error?.message})`,
       );
     }
